@@ -1,0 +1,132 @@
+\hypertarget{classGraph}{}\section{Graph Class Reference}
+\label{classGraph}\index{Graph@{Graph}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGraph_a659cbdfe9bf825b899b5a8c19296718e}{Graph} (int src, int target, Q\+String file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Constructor para la clase grafo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraph_a658fb9e409aea585c61dba4792adb9ea}\label{classGraph_a658fb9e409aea585c61dba4792adb9ea}} 
+void \hyperlink{classGraph_a658fb9e409aea585c61dba4792adb9ea}{init} ()
+\begin{DoxyCompactList}\small\item\em Función para inicializar las distancias entre nodos en infinito. \end{DoxyCompactList}\item 
+int \hyperlink{classGraph_ae143867923e6355ff07a9f61626a9ef6}{get\+Nearest} ()
+\begin{DoxyCompactList}\small\item\em Función para encontrar el nodo más cercano. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraph_a290dc10865625163c4d0679454a95499}\label{classGraph_a290dc10865625163c4d0679454a95499}} 
+void \hyperlink{classGraph_a290dc10865625163c4d0679454a95499}{dijkstra} ()
+\begin{DoxyCompactList}\small\item\em Función que realiza el algoritmo de Dijkstra. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraph_afb0185b10e20bf8f8b6768c3bbd54607}\label{classGraph_afb0185b10e20bf8f8b6768c3bbd54607}} 
+void \hyperlink{classGraph_afb0185b10e20bf8f8b6768c3bbd54607}{display} ()
+\begin{DoxyCompactList}\small\item\em Función para desplegar el resultado del camino más corto que se debe seguir. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraph_a1a003c8b7e4fee160f8ec16911e3a901}\label{classGraph_a1a003c8b7e4fee160f8ec16911e3a901}} 
+void {\bfseries dijkstra\+\_\+\+Algorithm} ()
+\item 
+void \hyperlink{classGraph_a7eca1a461b123474671c2b785ac335ce}{generate\+Graph} (Q\+String file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Función para inicializar el grafo según la lectura del archivo. \end{DoxyCompactList}\item 
+void \hyperlink{classGraph_ade26593d4c45992cf9fd3f017129179f}{display\+Matrix} (int v)
+\begin{DoxyCompactList}\small\item\em Función para desplegar el grafo en consola. \end{DoxyCompactList}\item 
+void \hyperlink{classGraph_a831e3a8fae52181ce7051848cfcc3e53}{add\+\_\+edge} (int u, int v, int weight)
+\begin{DoxyCompactList}\small\item\em Función para agregar los pesos entre los nodos. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraph_a57260bcca8d822e8ee546dbf02485b53}\label{classGraph_a57260bcca8d822e8ee546dbf02485b53}} 
+void {\bfseries read\+Record} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraph_ab5fcdaf2ecd8a4fd72b7e99b490bc610}\label{classGraph_ab5fcdaf2ecd8a4fd72b7e99b490bc610}} 
+int {\bfseries vert\+Arr} \mbox{[}20\mbox{]}\mbox{[}20\mbox{]}
+\item 
+\mbox{\Hypertarget{classGraph_a8d11efa4ce950a76e434618fb24b0e15}\label{classGraph_a8d11efa4ce950a76e434618fb24b0e15}} 
+int {\bfseries vertices} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGraph_a659cbdfe9bf825b899b5a8c19296718e}\label{classGraph_a659cbdfe9bf825b899b5a8c19296718e}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{int}]{source,  }\item[{int}]{targett,  }\item[{Q\+String}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Constructor para la clase grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Nodo desde el que se desea calcular el camino más corto. \\
+\hline
+{\em targett} & Nodo de destino para calcular Dijkstra. \\
+\hline
+{\em file\+\_\+name} & Nombre del archivo donde se encuentra el grafo. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraph_a831e3a8fae52181ce7051848cfcc3e53}\label{classGraph_a831e3a8fae52181ce7051848cfcc3e53}} 
+\index{Graph@{Graph}!add\+\_\+edge@{add\+\_\+edge}}
+\index{add\+\_\+edge@{add\+\_\+edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{add\+\_\+edge()}{add\_edge()}}
+{\footnotesize\ttfamily void Graph\+::add\+\_\+edge (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v,  }\item[{int}]{weight }\end{DoxyParamCaption})}
+
+
+
+Función para agregar los pesos entre los nodos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & Nodo de salida. \\
+\hline
+{\em v} & Nodo de destino. \\
+\hline
+{\em weight} & Peso entre los nodos. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_ade26593d4c45992cf9fd3f017129179f}\label{classGraph_ade26593d4c45992cf9fd3f017129179f}} 
+\index{Graph@{Graph}!display\+Matrix@{display\+Matrix}}
+\index{display\+Matrix@{display\+Matrix}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{display\+Matrix()}{displayMatrix()}}
+{\footnotesize\ttfamily void Graph\+::display\+Matrix (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Función para desplegar el grafo en consola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Cantidad de vértices. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_a7eca1a461b123474671c2b785ac335ce}\label{classGraph_a7eca1a461b123474671c2b785ac335ce}} 
+\index{Graph@{Graph}!generate\+Graph@{generate\+Graph}}
+\index{generate\+Graph@{generate\+Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{generate\+Graph()}{generateGraph()}}
+{\footnotesize\ttfamily void Graph\+::generate\+Graph (\begin{DoxyParamCaption}\item[{Q\+String}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Función para inicializar el grafo según la lectura del archivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & Nombre del archivo donde se encuentra del grafo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_ae143867923e6355ff07a9f61626a9ef6}\label{classGraph_ae143867923e6355ff07a9f61626a9ef6}} 
+\index{Graph@{Graph}!get\+Nearest@{get\+Nearest}}
+\index{get\+Nearest@{get\+Nearest}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+Nearest()}{getNearest()}}
+{\footnotesize\ttfamily int Graph\+::get\+Nearest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función para encontrar el nodo más cercano. 
+
+\begin{DoxyReturn}{Returns}
+int Nodo más cercano. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+auxclass.\+h\item 
+auxclass.\+cpp\end{DoxyCompactItemize}
