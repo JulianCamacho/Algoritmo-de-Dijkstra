@@ -6,8 +6,8 @@
 #include <netinet/in.h>
 #include <string.h>
 #include <string>
+#include <iostream>
 #define PORT 8080
-
 using namespace std;
 
 /**
@@ -53,22 +53,43 @@ int main() {
 
     valread = read( new_socket, buffer, 1024);
     printf("%s\n",buffer );
+
+    string nameFile, source, target;
+    int cont = 0;
+    for (int i = 0; i < sizeof(buffer); i++){
+        if (cont == 0){
+            source += buffer[i];
+            cont++;
+            continue;
+        }
+        if (cont == 1){
+            target += buffer[i];
+            cont++;
+            continue;
+        } else if(cont >= 2) {
+            nameFile += buffer[i];
+        }
+
+    }
+    try{
+        int sourceInt;
+        int targetInt;
+        sourceInt = stoi(source);
+        targetInt = stoi(target);
+        Graph g(sourceInt, targetInt, nameFile);
+        cout << "Grafo creado" << endl;
+
+        char char_array[g.display().size() + 1];
+        strcpy(char_array, g.display().c_str());
+        send(new_socket , char_array , strlen(char_array) , 0 );
+        printf("%s\n",char_array );
+
+
+    } catch(invalid_argument){}
+
     send(new_socket , hello , strlen(hello) , 0 );
     printf("Hello message sent\n");
     return 0;
-}
-
-
-/**
- * @brief
- *
- * @param newBuff
- */
-void setMessage(string newBuff){
-    char char_array[newBuff.size() + 1];
-    strcpy(char_array, newBuff.c_str());
-    //valread = read( new_socket, char_array, 1024);
-    printf("%s\n",char_array );
 }
 
 

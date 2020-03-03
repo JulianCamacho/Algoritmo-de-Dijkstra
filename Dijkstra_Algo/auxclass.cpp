@@ -23,14 +23,12 @@ int parent[100]; /**< TODO: describe */
  * @param targett Nodo de destino para calcular Dijkstra.
  * @param file_name Nombre del archivo donde se encuentra el grafo.
  */
-Graph::Graph(int source, int targett, QString file_name){
+Graph::Graph(int source, int targett, string file_name){
     generateGraph(file_name);
     this->src = source;
     this->target = targett;
     init();
     dijkstra();
-    displayMatrix(this->vertices);
-    display();
 }
 
 /**
@@ -38,14 +36,14 @@ Graph::Graph(int source, int targett, QString file_name){
  *
  * @param file_name Nombre del archivo donde se encuentra del grafo.
  */
-void Graph::generateGraph(QString file_name){
+void Graph::generateGraph(string file_name){
     for(int i = 0; i<20; i++){
         for (int j = 0; j<20; j++){
             vertArr[i][j] = INF;
         }
     }
-    ifstream infile(file_name.toStdString().c_str());
-    cout << file_name.toStdString().c_str() << endl;
+    ifstream infile(file_name);
+    cout << file_name << endl;
     if (!infile.is_open()){
         return;
     }
@@ -161,18 +159,26 @@ void Graph::dijkstra(){
  * @brief Función para desplegar el resultado del camino más corto que se debe seguir.
  *
  */
-void Graph::display(){
+string Graph::display(){
+    string result;
     cout << src << endl;
     cout << target << endl;
 
     int parnode = parent[target];
-
+    result += to_string(target);
     cout << target;
     while (parnode != src){
+        result += " <-- ";
+        result += to_string(parnode);
+        result += " ";
         cout << " <-- " << parnode << " ";
         parnode = parent[parnode];
     }
+    result += "<--";
+    result += to_string(src);
     cout << " <-- " << src << endl;
+    cout << result << " ay el bicho" << endl;
+    return result;
 }
 
 

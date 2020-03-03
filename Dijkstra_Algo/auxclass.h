@@ -1,6 +1,8 @@
 #ifndef AUXCLASS_H
 #define AUXCLASS_H
 #include <QString>
+#include <string>
+using namespace std;
 
 class Graph {
 
@@ -14,13 +16,13 @@ public:
     int vertices = 0;
 
 public:
-    Graph(int src, int target, QString file_name);
+    Graph(int src, int target, string file_name);
     void init();
     int getNearest();
     void dijkstra();
-    void display();
+    string display();
     void dijkstra_Algorithm();
-    void generateGraph(QString file_name);
+    void generateGraph(string file_name);
     void displayMatrix(int v);
     void add_edge(int u, int v, int weight);
     void readRecord();
