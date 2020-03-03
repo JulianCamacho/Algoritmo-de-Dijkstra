@@ -1,0 +1,75 @@
+\hypertarget{classMainWindow}{}\section{Main\+Window Class Reference}
+\label{classMainWindow}\index{Main\+Window@{Main\+Window}}
+
+
+Inheritance diagram for Main\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Window\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Función para administrar los widgets de la interfaz. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em Función para eliminar la ventana principal. \end{DoxyCompactList}\item 
+string \hyperlink{classMainWindow_a8cdf55a4125ee2ea27603437cc0cc270}{nodos\+A\+Calcular} ()
+\begin{DoxyCompactList}\small\item\em Función que lee los espacios de entrada del usuario para saber cuáles nodos calcular. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_aa6bac59908d3fe97f40ee6fedadd3e37}\label{classMainWindow_aa6bac59908d3fe97f40ee6fedadd3e37}} 
+int {\bfseries client\+Socket} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_aeab1b24cfcc36c3320d2ade4762d1301}\label{classMainWindow_aeab1b24cfcc36c3320d2ade4762d1301}} 
+int {\bfseries my\+To\+Int} (vector$<$ string $>$ vec)
+\item 
+\mbox{\Hypertarget{classMainWindow_aed2ae507c6b09c090aef250abccb02d0}\label{classMainWindow_aed2ae507c6b09c090aef250abccb02d0}} 
+void {\bfseries display\+Message\+Box} (string msg)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_a5852bd203b06ab5afdf787111d20be72}\label{classMainWindow_a5852bd203b06ab5afdf787111d20be72}} 
+string {\bfseries final\+Msg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Main\+Window()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Función para administrar los widgets de la interfaz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_a8cdf55a4125ee2ea27603437cc0cc270}\label{classMainWindow_a8cdf55a4125ee2ea27603437cc0cc270}} 
+\index{Main\+Window@{Main\+Window}!nodos\+A\+Calcular@{nodos\+A\+Calcular}}
+\index{nodos\+A\+Calcular@{nodos\+A\+Calcular}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{nodos\+A\+Calcular()}{nodosACalcular()}}
+{\footnotesize\ttfamily string Main\+Window\+::nodos\+A\+Calcular (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función que lee los espacios de entrada del usuario para saber cuáles nodos calcular. 
+
+\begin{DoxyReturn}{Returns}
+char 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}
