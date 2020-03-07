@@ -5,7 +5,7 @@
 #### Primer Semestre  
 
 
-## Primera Tarea Programada
+## Primera Tarea Programada: Algoritmo de Dijkstra
 \
 Profesor: Isaac Ramírez Herrera.   
 Estudiante: José Julián Camacho Hernández.   
